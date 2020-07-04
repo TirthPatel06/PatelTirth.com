@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animation</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap"rel="stylesheet">
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css" integrity="sha512-kb1CHTNhoLzinkElTgWn246D6pX22xj8jFNKsDmVwIQo+px7n1yjJUZraVuR/ou6Kmgea4vZXZeUDbqKtXkEMg==" crossorigin="anonymous" />
+	<style type="text/css">
+		*{
+			margin:0;
+			padding: 0;
+			box-sizing: border-box;
+			color: white;
+			font-family: 'Roboto Mono', monospace;
+		}
+
+		header{
+			background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.1)), url(tour.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			width: 100%;
+			height: 100vh;
+		}
+
+	nav{
+		width: 100%;
+		height: 15vh;
+		background-color: rgb(0,0,0,0.2);
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		text-transform: uppercase;
+	}
+
+
+	nav .logo{
+		width: 25%;
+		font-size: 25px;
+		text-align: center;
+	}
+
+	nav .menu{
+		width: 40%;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	nav .menu a{
+		width: 25%;
+		font-size: 20px;
+		text-decoration: none;
+		color: white;
+	}
+
+	main{
+		cursor: all-scroll; black;
+		width: 100%;
+		height: 85vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	section h3{
+		font-size:35px;
+		font-weight: 200;
+		letter-spacing: 3px;
+		text-shadow: 1px 1px 2px black;
+	}
+
+	section h1{
+		margin: 30px 0 20px 0;
+		font-size: 55px;
+		font-weight: 700px;
+		text-shadow: 2px 1px 5px black;
+		text-transform: uppercase;
+	}
+
+	section p{
+		font-size: 25px;
+		color: #eee;
+		word-spacing: 3px;
+		margin-bottom: 25px;
+		text-shadow: 1px 1px 1px black;
+		text-transform: uppercase;
+	}
+
+	section a{
+		padding: 12px 30px;
+		border-radius: 4px;
+		outline: none;
+		text-transform: uppercase;
+		font-size: 13px;
+		font-weight: 500;
+		text-decoration: none;
+		letter-spacing: 1px;
+		transition: all .5s ease;
+		cursor: cell;
+	}
+
+	section .bt1{
+		background: white;
+		color: #000;
+	}
+
+	.bt1:hover{
+		background: #00b894;
+		color: white;
+	}
+
+	section .bt2{ 
+		background: #00b894;
+		color: white;
+	}
+
+	.bt2:hover{
+		background: white;
+		color: #000;
+	}
+
+	nav .menu a:first-child{
+		color: #00b894;
+	}
+
+	.change_content:after{
+		content:'';
+		animation:changetext 5s infinite linear;
+		color: #00b894;
+	}
+
+	@keyframes changetext{
+		0%{content: "suart";}
+		20%{content: "junagadh";}
+		35%{content: "girnaar";}
+		60%{content: "pavagadh";}
+		80%{content: "saputara";}
+		100%{content: "dwarka";}
+	}
+	.animate__heartBeat{
+		animation-iteration-count: infinite;
+	}
+    
+    nav h1:hover{
+    	color: aqua;
+    	cursor: zoom-in;
+    }
+
+    nav a:hover{
+    	color: aqua;
+    	cursor: pointer;
+    }
+
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="logo"> <h1 class="animate__heartBeat">Gujarat</h1> </div>
+			<div class="menu">
+				<a href="#">home</a>
+				<a href="#">gallery</a>
+				<a href="#">about</a>
+				<a href="#">contact</a>
+			</div>
+		</nav>
+
+			<main>
+				<section>
+					<h3>welcome to gujarat</h3>
+					<h1>do come & visit<span class="change_content"> </span></h1>
+					<p>once is not enough</p>
+					<a href="$" class="bt1">learn more</a>
+					<a href="$" class="bt2">signup here</a>
+				</section>
+			</main>
+	</header>
+</body>
+</html>
